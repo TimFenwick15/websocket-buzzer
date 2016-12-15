@@ -7,7 +7,7 @@ function beep() {
 (function () {
   document.getElementById('buzzer').addEventListener('click', event => {
     beep()
-    httpGetAsync('/buzz', _ => console.log('Response: ', _))
+    httpGetAsync('/buzz', _ => document.getElementById('info').innerHTML = _)
   })
 })()
 
