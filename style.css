@@ -1,27 +1,23 @@
-/*body {
-  width: 100px;
-  height: 100px;
-  background-color: black;
-
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  
-  margin: auto;
-
+/*#container*/
+body{
+  font-size: 72px;
 }
 
-button {
+div {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buzzer {
   background-color: red;
   border: none;
   border-radius: 50%;
   color: white;
   padding: 100px 100px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 72px;
   cursor: pointer;
-}*/
+}
+

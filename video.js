@@ -30,10 +30,8 @@ function onPlayerReady(event) {
 
 function onPlayerStateChange(event) {
   // event: -1 is unstarted. Always fires when the video changes
-  if (event.data === -1) {
-    console.log('video switched!')
+  if (event.data === -1)
     httpGetAsync('/clear', _ => console.log('Response: ', _))
-  }
 }
 
 
@@ -43,5 +41,5 @@ function stopVideo() {
 
 
 const ws = new WebSocket('ws://localhost:1337')
-ws.onmessage = event => player.nextVideo()//alert(event.data)
+ws.onmessage = event => player.nextVideo()
 
